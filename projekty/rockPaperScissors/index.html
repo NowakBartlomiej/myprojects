@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    
+    <main>
+
+        <div class="gamePanel">
+
+            <!-- computer divs -->
+        <section class="computerSection">
+            <div class="computerScore">
+                <p class="icon">🤖</p>
+                <p>score: <span id="computerScore">0</span></p>
+            </div>
+
+            <div class="computerButtons">
+                <button class="computerBtn" value="rock">⛰️</button>
+                <button class="computerBtn" value="paper">🧻</button>
+                <button class="computerBtn" value="scissors">✂️</button>
+            </div>
+        </section>
+            
+            <!-- result divs -->
+            <div id="result">
+                <!-- <h1>You win</h1> -->
+            </div>
+
+            <!-- computer divs -->
+        <section class="userSection">
+            
+            <div class="userButtons">
+                <button class="userBtn" value="rock">⛰️</button>
+                <button class="userBtn" value="paper">🧻</button>
+                <button class="userBtn" value="scissors">✂️</button>
+            </div>
+
+            <div class="userScore">
+                <p class="icon">🧑</p>
+                <p>score: <span id="userScore">0</span></p>
+            </div>
+        </section>
+
+        </div>
+
+        <button id="resetGame">Reset Game</button>
+
+    </main>
+
+</body>
+</html>

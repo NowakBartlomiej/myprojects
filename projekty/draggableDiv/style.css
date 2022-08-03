@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --main-color: #b699ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: var(--main-color);
+    overflow: hidden;
+}
+
+.wrapper {
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper header {
+    color: var(--main-color);
+    font-size: 23px;
+    font-weight: 500;
+    padding: 17px 30px;
+    border-bottom: 1px solid #bfbfbf;
+    text-align: center;
+    cursor: move;
+}
+
+.wrapper header.active {
+    cursor: move;
+    user-select: none;
+}
+
+.wrapper .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 30px 40px;
+}
+
+.content .icon {
+    height: 95px;
+    width: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 5px solid #b699ff;
+}
+
+.content .icon i {
+    color: var(--main-color);
+    font-size: 60px;
+}
+
+.content .title {
+    font-size: 29px;
+    font-weight: 500;
+    margin: 15px 0;
+    user-select: none;
+}
+
+.content .title::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.content p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.content p::selection {
+    color: #fff;
+    background: var(--main-color);
+}
+

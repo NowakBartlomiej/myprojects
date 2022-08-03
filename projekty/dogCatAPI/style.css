@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(#56ACBF, #2D77A6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    background: rgb(255, 253, 250, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+    height: 23em;
+    width: 15em;
+    color: #333;
+    user-select: none;
+}
+
+.result img {
+    object-fit: cover; 
+    height: 100%;
+    width: 100%; 
+    /* max-width: 100%;
+    max-height: 100%; */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button {
+    background: #FFFDFA;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border: 0;
+    border-radius: .15rem;
+    margin: .5rem;
+    width: 15rem;
+    font-size: 1.1rem;
+    padding: .5rem;
+    color: black;
+}
+
+.buttons button:hover {
+    background: #E6E1DA;
+}
+
+.buttons button:active {
+    transform: scale(.95);
+}
+
+.buttons button:focus {
+    outline: none;
+}
+
+

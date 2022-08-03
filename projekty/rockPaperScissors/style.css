@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+main {
+    background: linear-gradient(120deg, #3CA6A6, #024959);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gamePanel {
+    width: 33em;
+    height: 48em;
+    background: rgb(242, 227, 213, .8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.computerSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.computerSection .computerScore {
+    display: flex;
+}
+
+.computerSection .computerScore p {
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+.computerSection .computerButtons button {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+    border-style: outset;
+}
+
+
+/* User */
+.userSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.userSection .userScore {
+    display: flex;
+}
+
+.userSection .userScore p {
+    font-size: 3em;
+    font-weight: 500;
+    letter-spacing: .2rem;
+}
+
+.userSection .userButtons button {
+    display: inline-block;
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* resulr */
+#result {
+    font-size: 2.5rem;
+}
+
+.win {
+    color: #437512;
+}
+
+.lose {
+    color: #D40D12;
+}
+
+.draw {
+    color: #3CA6A6;
+}
+
+.btnActive {
+    border: 5px solid #3CA6A6;
+}
+
+#resetGame {
+    display: inline-block;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    background: #D40D12;
+    border: .18rem solid #5C0002;
+    color: #fff;
+    transition: .2s ease-in-out;
+}
+
+#resetGame:hover {
+    background: #FF1D23;
+}
+
+
+
+

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #9c88ff;
+    --second-color: #8c7ae6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem;
+    border-radius: .3rem;
+    width: 100%;
+    max-width: 460px;
+}
+
+.box .item {
+    background: var(--main-color);
+    color: #fff;
+    margin-bottom: .5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    border-radius: .3rem;
+    transition: all .3s ease-in-out;
+}
+
+.box .item:last-child {
+    margin: 0;
+}
+
+.box .item:hover {
+    background: var(--second-color);
+}
+
+.box .item .text {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.box .item i {
+    font-size: 1.3rem;
+}
+
